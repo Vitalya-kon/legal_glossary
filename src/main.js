@@ -7,7 +7,7 @@ import App from './App.vue'
 
 import './assets/main.css'
 import 'aos/dist/aos.css'
-import 'tailwindcss/tailwind.css'
+import '../node_modules/tailwindcss/tailwind.css'
 
 const app = createApp(App);
 
