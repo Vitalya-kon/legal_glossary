@@ -13,11 +13,11 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@formkit/auto-animate': '@formkit/auto-animate/vue', // Псевдоним для модуля @formkit/auto-animate/vue
     }
   },
 
   base: process.env.NODE_ENV === 'production'
-    ? '/legal_glossary/dist/'
-    : '/'
+    ? '/legal_glossary/'
+    : '/',
+  outputDir: "docs",
 })
