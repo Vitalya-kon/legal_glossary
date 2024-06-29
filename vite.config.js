@@ -15,5 +15,8 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  base: '/legal_glossary/dist/'
+
+  base: process.env.NODE_ENV === 'production'
+    ? '/legal_glossary/dist/'
+    : '/'
 })
