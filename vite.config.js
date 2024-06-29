@@ -13,11 +13,9 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
+      vue: 'vue/dist/vue.esm-bundler.js',
     }
   },
 
-  base: process.env.NODE_ENV === 'production'
-    ? '/legal_glossary/'
-    : '/',
-  outputDir: "docs",
+  base:  '/legal_glossary/dist/'
 })
